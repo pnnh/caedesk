@@ -7,11 +7,14 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "windows": "npx @react-native-community/cli run-windows"
   },
   "dependencies": {
     "react": "19.0.0",
-    "react-native": "0.79.4"
+    "react-native": "0.79.4",
+    "react-native-windows": "0.79.4",
+    "react-strict-dom": "0.0.50"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -29,11 +32,19 @@
     "@types/react-test-renderer": "^19.0.0",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
+    "metro-config": "^0.82.5",
     "prettier": "2.8.8",
     "react-test-renderer": "19.0.0",
     "typescript": "5.0.4"
   },
   "engines": {
     "node": ">=18"
+  },
+  "react-native-windows": {
+    "init-windows": {
+      "name": "caedesk",
+      "namespace": "caedesk",
+      "template": "old/uwp-cpp-app"
+    }
   }
 }
