@@ -6,15 +6,11 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ],
-      "@pnnh/*": [
-        "./pnnh/*"
       ]
     }
   },
   "include": [
-    "src/**/*",
-    "pnnh/**/*"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",
